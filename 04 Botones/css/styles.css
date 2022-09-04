@@ -1,0 +1,110 @@
+<!-- en esta seccion encontraran los botones 
+ con los distintos cambios de diseño que se pueden presentar
+en un boton-->
+
+ul{
+    list-style: none; 
+}
+  
+/* Boton con bordes redondeados */
+li 
+{
+    display: inline-block;
+    cursor: pointer; 
+}
+li:hover 
+{
+    color: white; 
+}
+  
+  #boton_1 {
+    padding: 20px;
+    background: purple;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px; }
+  
+  #boton_2 {
+    padding: 20px;
+    background: orange;
+    border-radius: 15px 30px 15px 30px;
+    -webkit-border-radius: 15px 30px 15px 30px;
+    -moz-border-radius: 15px 30px 15px 30px;
+    -o-border-radius: 15px 30px 15px 30px; }
+  
+  #boton_3 {
+    padding: 20px;
+    background: blue;
+    border-radius: 30px 15px 30px 15px;
+    -webkit-border-radius: 30px 15px 30px 15px;
+    -moz-border-radius: 30px 15px 30px 15px;
+    -o-border-radius: 30px 15px 30px 15px; }
+  
+  #boton_4 {
+    padding: 20px;
+    background: yellowgreen;
+    border-radius: 40px 0 60px 0;
+    -webkit-border-radius: 40px 0 60px 0;
+    -moz-border-radius: 40px 0 60px 0;
+    -o-border-radius: 40px 0 60px 0; }
+  
+  #boton_5 
+  {
+    padding: 20px;
+    background: cyan;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -o-border-radius: 70px; 
+  }
+
+  /* Boton con bordes con animacion */
+  button 
+  {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #6aa389;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit; }
+    button.big-button {
+      padding: 1em 2em;
+      border: 2px solid #6aa389;
+      border-radius: 1em;
+      background: #cdffe8;
+      transform-style: preserve-3d;
+      transition: all 175ms cubic-bezier(0, 0, 1, 1); }
+      button.big-button::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #96e8c3;
+        border-radius: inherit;
+        box-shadow: 0 0 0 2px #79ba9c, 0 0.75em 0 0 var(--colorShadeA);
+        transform: translate3d(0, 0.75em, -1em);
+        transition: all 175ms cubic-bezier(0, 0, 1, 1); }
+      button.big-button:hover {
+        background: #bbe8d3;
+        transform: translate(0, 0.375em); }
+        button.big-button:hover::before {
+          transform: translate3d(0, 0.75em, -1em); }
+      button.big-button:active {
+        transform: translate(0em, 0.75em); }
+        button.big-button:active::before {
+          transform: translate3d(0, 0, -1em);
+          box-shadow: 0 0 0 2px #79ba9c, 0 0.25em 0 0 var(--colorShadeB); }
+
+
+
